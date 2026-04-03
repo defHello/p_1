@@ -15,7 +15,11 @@ def azs(distance, litr, price):
     ltr = distance * litr / 100
     total = ltr * price
     return ltr, total
-x = float(input('Введите расстояние: '))
-y = float(input('Введите расход топлива на 100 км '))
-b = float(2.64)
-print(azs(x, y, b))
+distance = float(input('Введите расстояние: '))
+litr = float(input('Введите расход топлива на 100 км '))
+price = float(2.64)
+print(azs(distance=distance,
+          litr=litr,
+          price=price
+     )
+)
