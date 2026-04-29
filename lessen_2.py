@@ -89,15 +89,15 @@ print(text_2[-2])
 text_3 = "Hello"
 print(text_3[0:5])
 text_4 = "Hello"
-print(text_4[0:4])
+print(text_4[0:-2])
 text_5 = "Hello"
-print(text_4[0:6:2])
+print(text_4[::2])
 text_6 = "Hello"
-print(text_6[1:4:2])
+print(text_6[1::2])
 text_7 = "Hello"
 print(text_7[::-1])
 text_8 = "Hello"
-print(text_8[-1:-8: -2])
+print(text_8[::-2])
 text_9 = "Hello"
 print(len(text_9))
 
