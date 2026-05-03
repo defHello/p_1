@@ -1,10 +1,8 @@
-def maximum(x):
-    if x > 0:
-        return True
-    else:
-        return False
-numbers = [1, 0, -1]
-print(list(filter(maximum, numbers)))
+def is_positive(x):
+    return x > 0
+
+numbers = [3, 0, -1]
+print(list(filter(is_positive, numbers)))
 
 
 numbers = [1, 0, -1]

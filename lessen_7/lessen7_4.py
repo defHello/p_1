@@ -20,15 +20,15 @@ x, y = 25, 6
 print(cickl(x,y))
 
 
-# def start_func(func):
-#     def wrapper(*args, **kwargs):
-#         print(f'запуск функции')
-#         result = func(*args, **kwargs)
-#         return result
-#     return wrapper
+def start_func(func):
+    def wrapper(*args, **kwargs):
+        print(f'запуск функции')
+        result = func(*args, **kwargs)
+        return result
+    return wrapper
 
-# @start_func
-# def greet():
-#     print("Hello world!")
+@start_func
+def greet():
+    print("Hello world!")
 
-# greet()
+greet()
